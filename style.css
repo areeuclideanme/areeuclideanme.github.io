@@ -1,0 +1,69 @@
+body {
+    background-color: #E0E0E0;
+}
+
+#wrapper {
+    margin: auto;
+    width: 300px;
+}
+
+.topic {
+    font-family: Nunito, sans-serif;
+    width: 400px;
+    height: 400px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    border: 2px solid black;
+    margin-top: 20px;
+}
+
+.title {
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+.description {
+    font-size: 1em;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 5px;
+}
+
+.info {
+    width: 400px;
+    height: 320px;
+}
+
+.thumbnail {
+    margin-left: 50px;
+    width: 300px;
+    height: 200px;
+    border: 2px solid black;
+}
+
+.button {
+    display: inline-block;
+    font-size: 25px;
+    width: 150px;
+    height: 40px;
+    background-color: #E0F0FF;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid black;
+    margin-left: 30px;
+    color: black;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #F0F7FF;
+}
+
+.button:active {
+    background-color: #C0E0FF;
+}
+
+@font-face { font-family: Nunito; src: url('Nunito-VariableFont_wght.ttf'); }

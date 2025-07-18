@@ -1,0 +1,37 @@
+#stuff {
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+    border: 5px solid gray;
+}
+
+#canvas {
+    margin-left: 50px;
+}
+
+#controls {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.option {
+    margin-top: 10px;
+}
+
+.toggle {
+    display: inline-block;
+    width: 25%;
+}
+
+.slider {
+    display: inline-block;
+    width: 70%;
+}
+
+#reset {
+    margin-left: 150px;
+    width: 100px;
+}
+
+#play {
+    width: 100px;
+}

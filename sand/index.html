@@ -1,0 +1,46 @@
+<html>
+<head>
+	<link href="style.css" rel="stylesheet" type='text/css'>
+</head>
+<body>
+	<div id = "stuff">
+		<canvas width='400px' height='400px' id='canvas'></canvas>
+		<div id="controls">
+			<div class="option">
+				<div class="toggle">
+				</div>
+				<div class="slider">
+				<input type="range" id="wind" name="wind" min="1" max="20" value="2" oninput="set_wind(this.value)"/>
+				<label for="wind">wind strength: <span id="windval">2</span></label>
+				</div>
+			</div>
+			<div class="option">
+				<div class="toggle">
+				<input type="checkbox" id="shelter" name="shelter" checked onclick="toggle_shelter(this.checked)"/>
+    			<label for="shelter">sheltering</label>
+				</div>
+				<div class="slider">
+				<input type="range" id="angle" name="angle" min="0.2" max="5" step="0.2", value="1" oninput="set_shelter(this.value)"/>
+				<label for="angle">sheltering angle: <span id="shelterval">1</span></label>
+				</div>
+			</div>
+			<div class="option">
+				<div class="toggle">
+				<input type="checkbox" id="avalanche" name="avalanche" checked onclick="toggle_avalanche(this.checked)"/>
+    			<label for="avalanche">avalanches</label>
+				</div>
+				<div class="slider">
+				<input type="range" id="thresh" name="thresh" min="2" max="6" value="3" oninput="set_avalanche(this.value)"/>
+				<label for="thresh">avalanche threshhold: <span id="avalancheval">3</span></label>
+				</div>
+			</div>
+			<div class="option">
+				<button id="reset" type="button" onclick="reset()">reset</button>
+				<button id="play" type="button" onclick="toggle()">play</button>
+			</div>
+		</div>
+	</div>
+
+	<script text='text/javascript' src='sand.js'></script>
+</body>
+</html>
